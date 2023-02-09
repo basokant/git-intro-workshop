@@ -138,21 +138,24 @@ git log
 
 ** Writing good commit messages is DIFFICULT! I'd recommend following some of the rules found here: https://cbea.ms/git-commit/
 
-You can use `git checkout` to visit a past commit.
-
-```bash
-git checkout <commit-id>
-```
-
-** Whenever git asks for a commit-id, we can use `HEAD` to access the most recent commit (on the current branch), and `HEAD~1` to access 1 commit before the HEAD.
-
-** This puts you in a detached HEAD state, so be careful when making more commits.
-
 - [ ] Open the `about-me.md` file that you created in a text editor.
 - [ ] Answer the following question inside this file: What's a popular game everyone seems to love but you don't like? Why don't you like it?
 - [ ] Commit this change.
 - [ ] Now answer the following question in the same file, below your answer to the previous one: What are your three favourite video games of all time?
 - [ ] Commit this change.
+
+You can use `git checkout` to visit a past commit. (Move the HEAD pointer to another commit)
+
+```bash
+git checkout <commit-sha>
+```
+
+** Whenever git asks for a commit-sha, we can use `HEAD` to access the most recent commit (on the current branch), and `HEAD~1` to access 1 commit before the HEAD.
+
+** This puts you in a detached HEAD state, so be careful when making more commits.
+
+- [ ] Log the commit history.
+- [ ] Visit a previous commit with `git checkout`, and then go back to the most recent commit.
 - [ ] Now delete everything in the file!
 - [ ] Commit this change.
 
@@ -160,17 +163,32 @@ git checkout <commit-id>
 
 We can undo a commit in two ways:
 
-1. `git revert <commit-id>` creates a new commit with the inverse of the last commit.
+1. `git revert <commit-sha>` creates a new commit with the inverse of the last commit.
 
 - use this for public shared repositories, not ideal for minimal Git history.
 
-2. `git reset --hard <commit-id>`
+2. `git reset --hard <commit-sha>`
 
 - reset the commit history to that specified commit.
 
 - `--hard` nukes all untracked changes after reseting. 
 
 - Without `--hard`, the changes will be untracked.
+
+We can amend the most recent commit with
+
+```bash
+git commit --amend
+```
+
+- opens an editor to edit the commit/commit message.
+
+![Git Checkout, Revert, and Reset](https://miro.medium.com/v2/resize%3Afit%3A1400/format%3Awebp/1%2AvsefSeRgwTGQqK-X2kpm6Q.png)
+
+- [ ] Revert the last commit (the delete).
+- [ ] Add your favourite food to the `about-me.md` file in a new line.
+- [ ] Hard reset to the last commit.
+- [ ] Hard reset to the commit before the delete.
 
 ### Branches
 
