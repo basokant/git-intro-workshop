@@ -14,6 +14,22 @@ A repository for the Git(Hub) Intro workshop run for the members of Western Game
 
 ### What is Git?
 
+- The **de facto** modern version control system.
+
+- Git is like a **big album of _snapshots_** that helps you **keep track of changes** in your projects, and it's especially helpful when you're **working with others**.
+
+  - Imagine you're making a big Lego creation and you want to remember all the steps you took to build it.
+
+  - You could take a picture of your progress after each step, and then you would have a whole album of pictures showing how your Lego creation was built step by step.
+
+  - **Git does the same thing, but instead of pictures, it takes snapshots of your code.**
+
+  - This way, you can always go back to an earlier version if you need to make changes or fix a mistake.
+
+  - And if you're working on a project with friends, you can use Git to share your changes with each other and see who made what changes.
+
+- Developed in 2005 by Linus Torvalds (creator of Linux)
+
 ### Install
 
 ### Pre-Requisites
