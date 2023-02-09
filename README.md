@@ -44,6 +44,19 @@ https://git-scm.com/downloads
 
 ### Pre-Requisites
 
+1. Have a text editor
+   1. VSCode (recommended)
+   2. NotePad++
+   3. (Neo)Vim
+   4. Emacs, etc.
+
+2. Know basic Bash commands
+   1. `cd`
+   2. `ls`
+   3. `rm`
+   4. `mkdir`
+   5. `touch`, etc.
+
 ### The Mental Model
 
 ### Setting Up a Repository
