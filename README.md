@@ -92,6 +92,10 @@ A **Git repository** is a special directory which allows you to save and access 
 
 In either case, you should see a `.git/` sub-directory in your project after initializing it as a repository.
 
+- [ ] Clone this repository
+- [ ] Create a new directory, with a name of the form `<last 2 letters of your last name><first 2 letters of your first name>`
+- [ ] Inside this directory, create a new file called `about-me.md`
+
 ### Configuration
 
 It's time to configure your Git name and email to be used by the system.
