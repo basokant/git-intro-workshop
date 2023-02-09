@@ -14,7 +14,7 @@ A repository for the Git(Hub) Intro workshop run for the members of Western Game
 
 ### What is Git?
 
-- The **de facto** modern version control system.
+- The **de facto** distributed version control system.
 
 - Git is like a **big album of _snapshots_** that helps you **keep track of changes** in your projects, and it's especially helpful when you're **working with others**.
 
@@ -136,10 +136,17 @@ We can see the past commits with:
 git log
 ```
 
+We can check the current status that we're in (changes in the staging area and untracked changes).
+
+```bash
+git status
+```
+
 ** Writing good commit messages is DIFFICULT! I'd recommend following some of the rules found here: https://cbea.ms/git-commit/
 
 - [ ] Open the `about-me.md` file that you created in a text editor.
 - [ ] Answer the following question inside this file: What's a popular game everyone seems to love but you don't like? Why don't you like it?
+- [ ] Check the current status.
 - [ ] Commit this change.
 - [ ] Now answer the following question in the same file, below your answer to the previous one: What are your three favourite video games of all time?
 - [ ] Commit this change.
@@ -171,7 +178,7 @@ We can undo a commit in two ways:
 
 - reset the commit history to that specified commit.
 
-- `--hard` nukes all untracked changes after reseting. 
+- `--hard` nukes all untracked changes after reseting.
 
 - Without `--hard`, the changes will be untracked.
 
@@ -191,6 +198,31 @@ git commit --amend
 - [ ] Hard reset to the commit before the delete.
 
 ### Branches
+
+**Mental Model**
+
+- Every repository has at least one **branch**. Think of a branch as a specific timeline in the history.
+- A **branch** is a series of snapshots that represents a timeline of changes. Branches can start from any snapshot in the history.
+- Branches are key for collaboration with GitHub.
+
+We've already been using a branch that we created!
+
+`git branch` ~ list all branches, and show current branch.
+
+- `-a` flag lists all, including remote/non-local branches.
+- `-d <branch-name>` flag deletes a branch
+
+`git checkout <branch-name>` ~ Check out a branch.
+
+- `-b` flag creates a new branch and checks it out.
+
+** Alternative is to use `git switch <branch-name>` (and `-c` flag to create a new branch).
+
+- [ ] List all (including remote) branches.
+- [ ] Checkout the main branch. Notice how your directory and `about-me.md` file has disappeared.
+- [ ] Create a new branch called `temp` and switch to it.
+- [ ] Switch back to your branch.
+- [ ] Delete the `temp` branch.
 
 ### Set-Up GitHub
 
