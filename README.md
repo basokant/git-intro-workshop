@@ -32,6 +32,16 @@ A repository for the Git(Hub) Intro workshop run for the members of Western Game
 
 ### Install
 
+https://git-scm.com/downloads
+
+**Windows**: Use the installer, which comes with Git Bash (emulator for bash and git)
+
+** I recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) instead for various reasons.
+
+**Linux:** use your package manager of choice.
+
+**MacOS:** use homebrew/macports package manager, or the installer (recommend homebrew)
+
 ### Pre-Requisites
 
 ### The Mental Model
