@@ -4,17 +4,33 @@ A repository for the Git(Hub) Intro workshop run for the members of Western Game
 
 ## Resources
 
-https://git-scm.com/downloads
-
-https://rogerdudler.github.io/git-guide/
-
-https://www.atlassian.com/git/tutorials/
-
-https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
-
-https://github.com/skills/introduction-to-github
+- https://git-scm.com/downloads
+- https://rogerdudler.github.io/git-guide/
+- https://www.atlassian.com/git/tutorials/
+- https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
+- https://github.com/skills/introduction-to-github
 
 ## Outline
+
+### What is Git?
+
+### Install
+
+### Pre-Requisites
+
+### The Mental Model
+
+### Setting Up a Repository
+
+### The Git Workflow
+
+### Branches
+
+### Set-Up GitHub
+
+### Using GitHub
+
+___
 
 ## Notes
 
