@@ -116,11 +116,26 @@ Were finally ready to make commits (or save changes) to our repository. This is 
 
 2. _**Commit**_ everything in the staging area. `git commit -m <commit message>`
 
+The most common set of these 2 commands looks like this:
+
+```bash
+git add .
+git commit -m "hopefully it works this time 🙏"
+```
+
 ![Git Workflow Diagram](https://wac-cdn.atlassian.com/dam/jcr%3A0f27e004-f2f5-4890-921d-65fa77ba2774/01.svg?cdnVersion%3D760)
 
 Source: Atlassian Git Tutorials
 
-** Naming your commit with a message can be difficult! I'd recommend following some of the rules here: https://cbea.ms/git-commit/
+** Writing good commit messages is DIFFICULT! I'd recommend following some of the rules found here: https://cbea.ms/git-commit/
+
+- [ ] Open the `about-me.md` file that you created in a text editor.
+- [ ] Answer the following question inside this file: What's a popular game everyone seems to love but you don't like? Why don't you like it?
+- [ ] Commit this change.
+- [ ] Now answer the following question in the same file, below your answer to the previous one: What are your three favourite video games of all time?
+- [ ] Commit this change.
+- [ ] Now delete everything in the file!
+- [ ] Commit this change.
 
 ### Branches
 
