@@ -59,6 +59,21 @@ https://git-scm.com/downloads
 
 ### The Mental Model
 
+- _Every committed change_ in Git is **stored as a snapshot** and referenced by a **unique hash**.
+
+  - A **snapshot is not a diff**, 
+  - A **snapshot** is _an entire copy of an entire state of a system at a certain time._
+
+- **All files go through three possible states.**
+
+1. **Untracked** ~ changes that are not recorded yet.
+2. **Staged** ~ ready to be snapshotted.
+3. **Committed** ~ snapshotted.
+
+![The Git Mental Model](https://bernhardwenzel.com/images/posts/2021/git-final-models.png)
+
+Source: Bernhard Wenzel
+
 ### Setting Up a Repository
 
 ### The Git Workflow
