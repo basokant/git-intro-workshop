@@ -93,6 +93,7 @@ A **Git repository** is a special directory which allows you to save and access 
 In either case, you should see a `.git/` sub-directory in your project after initializing it as a repository.
 
 - [ ] Clone this repository
+- [ ] Create a new branch for yourself using `git switch -c <last 2 letters of last name><first 2 letters of your first name>`. Don't worry if this is confusing, we'll go through branching in more depth later!
 - [ ] Create a new directory, with a name of the form `<last 2 letters of your last name><first 2 letters of your first name>`
 - [ ] Inside this directory, create a new file called `about-me.md`
 
@@ -106,6 +107,20 @@ git config --global user.email <email>
 ```
 
 ### The Git Workflow
+
+Were finally ready to make commits (or save changes) to our repository. This is the essence of the Git workflow, and what 95% of your Git usage will look like.
+
+1. _**Add**_ files that you want to commit to the **staging area**.
+   1. `git add <file name>` adds a specific file to the staging area.
+   2. `git add <directory name/path>` adds all files in the directory to the staging area.
+
+2. _**Commit**_ everything in the staging area. `git commit -m <commit message>`
+
+![Git Workflow Diagram](https://wac-cdn.atlassian.com/dam/jcr%3A0f27e004-f2f5-4890-921d-65fa77ba2774/01.svg?cdnVersion%3D760)
+
+Source: Atlassian Git Tutorials
+
+** Naming your commit with a message can be difficult! I'd recommend following some of the rules here: https://cbea.ms/git-commit/
 
 ### Branches
 
