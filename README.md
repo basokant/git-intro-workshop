@@ -159,7 +159,7 @@ git checkout <commit-sha>
 
 ** Whenever git asks for a commit-sha, we can use `HEAD` to access the most recent commit (on the current branch), and `HEAD~1` to access 1 commit before the HEAD.
 
-** This puts you in a detached HEAD state, so be careful when making more commits.
+** This can put you in a detached HEAD state, so be careful when making more commits.
 
 - [ ] Log the commit history.
 - [ ] Visit a previous commit with `git checkout`, and then go back to the most recent commit.
@@ -223,6 +223,25 @@ We've already been using a branch that we created!
 - [ ] Create a new branch called `temp` and switch to it.
 - [ ] Switch back to your branch.
 - [ ] Delete the `temp` branch.
+
+There are two important branch operations in Git:
+
+**Rebase** ~ rebase the current branch onto a base branch/commit/tag.
+
+`git rebase <base>`
+
+**Merge** ~ merge a branch into the current branch.
+
+`git merge <branch-name>`
+
+We're going to use a common technique called "feature branching", where we create a new branch for a feature and merge it in later.
+
+- [ ] List all (including remote) branches.
+- [ ] Create and switch to a new branch called `new-feature`
+- [ ] Inside your directory, create a new file called `new-file.txt`
+- [ ] Type "hello world" in the file.
+- [ ] Commit all changes.
+- [ ] Switch to your original branch and merge the `new-feature` branch into it.
 
 ### Set-Up GitHub
 
