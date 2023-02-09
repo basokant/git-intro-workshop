@@ -61,8 +61,8 @@ https://git-scm.com/downloads
 
 - _Every committed change_ in Git is **stored as a snapshot** and referenced by a **unique hash**.
 
-  - A **snapshot is not a diff**, 
-  - A **snapshot** is _an entire copy of an entire state of a system at a certain time._
+  - A **snapshot is not a diff**,
+  - a **snapshot** is _an entire copy of the entire state of a system at a certain time._
 
 - **All files go through three possible states.**
 
@@ -73,6 +73,10 @@ https://git-scm.com/downloads
 ![The Git Mental Model](https://bernhardwenzel.com/images/posts/2021/git-final-models.png)
 
 Source: Bernhard Wenzel
+
+- A **commit** is _a copied collection of files in the repository representing their state at a certain time, along with a message, time, and unique hash._
+
+  - ie. a "safe", recoverable, and uniquely identifiable version of the project.
 
 ### Setting Up a Repository
 
