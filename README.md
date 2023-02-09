@@ -57,6 +57,8 @@ https://git-scm.com/downloads
    4. `mkdir`
    5. `touch`, etc.
 
+3. Have a GitHub account (create one here: https://github.com/join)
+
 ### The Mental Model
 
 _Every committed change_ in Git is **stored as a snapshot** and referenced by a **unique hash**.
@@ -92,7 +94,8 @@ A **Git repository** is a special directory which allows you to save and access 
 
 In either case, you should see a `.git/` sub-directory in your project after initializing it as a repository.
 
-- [ ] Clone this repository
+- [ ] Create a fork of this repository (here's how: https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+- [ ] Clone that repository (https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 - [ ] Create a new branch for yourself using `git switch -c <last 2 letters of last name><first 2 letters of your first name>`. Don't worry if this is confusing, we'll go through branching in more depth later!
 - [ ] Create a new directory, with a name of the form `<last 2 letters of your last name><first 2 letters of your first name>`
 - [ ] Inside this directory, create a new file called `about-me.md`
@@ -127,7 +130,23 @@ git commit -m "hopefully it works this time 🙏"
 
 Source: Atlassian Git Tutorials
 
+We can see the past commits with:
+
+```bash
+git log
+```
+
 ** Writing good commit messages is DIFFICULT! I'd recommend following some of the rules found here: https://cbea.ms/git-commit/
+
+You can use `git checkout` to visit a past commit.
+
+```bash
+git checkout <commit-id>
+```
+
+** Whenever git asks for a commit-id, we can use `HEAD` to access the most recent commit (on the current branch), and `HEAD~1` to access 1 commit before the HEAD.
+
+** This puts you in a detached HEAD state, so be careful when making more commits.
 
 - [ ] Open the `about-me.md` file that you created in a text editor.
 - [ ] Answer the following question inside this file: What's a popular game everyone seems to love but you don't like? Why don't you like it?
@@ -136,6 +155,22 @@ Source: Atlassian Git Tutorials
 - [ ] Commit this change.
 - [ ] Now delete everything in the file!
 - [ ] Commit this change.
+
+### Undoing and Rewriting History
+
+We can undo a commit in two ways:
+
+1. `git revert <commit-id>` creates a new commit with the inverse of the last commit.
+
+- use this for public shared repositories, not ideal for minimal Git history.
+
+2. `git reset --hard <commit-id>`
+
+- reset the commit history to that specified commit.
+
+- `--hard` nukes all untracked changes after reseting. 
+
+- Without `--hard`, the changes will be untracked.
 
 ### Branches
 
