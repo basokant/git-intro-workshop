@@ -245,7 +245,35 @@ We're going to use a common technique called "feature branching", where we creat
 
 ### Set-Up GitHub
 
+- [ ] Make an account (should be done)
+- [ ] Create a local SSH key.
+- [ ] Copy the SSH key to GitHub. (this is how authentication works)
+
 ### Using GitHub
+
+GitHub is a hosting service for remote repository, a collaborative development platform, and weird social media platform all in one.
+
+Our local repository is a clone of the remote repository, where the remote is our source of truth. To push our changes, we simply must use:
+
+```bash
+git push
+```
+
+`-u <remote-name>` specifies the remote name, which is required for the first push.
+
+**GitHub Flow**: how to collaborate on a public repository.
+
+1. Create a fork.
+2. Create a feature branch.
+3. [Submit a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request), and respond to any feedback with changes/comments.
+
+Let's submit a pull request!
+
+- [ ] Push your changes and new branch to your fork.
+- [ ] In GitHub, you should see an option to submit a pull request with this branch. Click the button, fill out the form, and submit!
+- [ ] Wait for me to merge it in.
+
+🎉 CONGRATS! Hopefully you know more Git than you did before! You'll never cry about losing your files again (unless you `rm -rf *` by accident 💀)
 
 ___
 
