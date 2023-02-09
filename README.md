@@ -59,12 +59,12 @@ https://git-scm.com/downloads
 
 ### The Mental Model
 
-- _Every committed change_ in Git is **stored as a snapshot** and referenced by a **unique hash**.
+_Every committed change_ in Git is **stored as a snapshot** and referenced by a **unique hash**.
 
-  - A **snapshot is not a diff**,
-  - a **snapshot** is _an entire copy of the entire state of a system at a certain time._
+- A **snapshot is not a diff**,
+- a **snapshot** is _an entire copy of the entire state of a system at a certain time._
 
-- **All files go through three possible states.**
+**All files go through three possible states.**
 
 1. **Untracked** ~ changes that are not recorded yet.
 2. **Staged** ~ ready to be snapshotted.
@@ -74,11 +74,32 @@ https://git-scm.com/downloads
 
 Source: Bernhard Wenzel
 
-- A **commit** is _a copied collection of files in the repository representing their state at a certain time, along with a message, time, and unique hash._
+A **commit** is _a copied collection of files in the repository representing their state at a certain time, along with a message, time, and unique hash._
 
-  - ie. a "safe", recoverable, and uniquely identifiable version of the project.
+ie. a "safe", recoverable, and uniquely identifiable version of the project.
 
 ### Setting Up a Repository
+
+A **Git repository** is a special directory which allows you to save and access versions of your files.
+
+#### `git init`
+
+- `cd` into the project's directory, and run `git init` to initialize it as a repo.
+
+#### `git clone`
+
+- run `git clone <repo url>` to create a local clone of a remote repository.
+
+In either case, you should see a `.git/` sub-directory in your project after initializing it as a repository.
+
+### Configuration
+
+It's time to configure your Git name and email to be used by the system.
+
+```bash
+git config --global user.name <name>
+git config --global user.email <email>
+```
 
 ### The Git Workflow
 
